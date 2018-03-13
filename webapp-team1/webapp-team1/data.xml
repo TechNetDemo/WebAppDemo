@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+   <user id="1">
+      <username>userA_5Mar</username>
+      <info>
+         <street>##1##</street>
+         <city>##2##</city>
+         <country>##3##</country>
+      </info>
+   </user>
+   <user id="2">
+      <username>userB_5Mar</username>
+      <info>
+         <street>##4##</street>
+         <city>##5##</city>
+         <country>##6##</country>
+      </info>
+   </user>
+   <user id="3">
+      <username>userC_5Mar</username>
+      <info>
+         <street>##7##</street>
+         <city>##8##</city>
+         <country>##9##</country>
+      </info>
+   </user>
+</document>
