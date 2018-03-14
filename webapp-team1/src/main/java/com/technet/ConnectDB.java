@@ -37,10 +37,10 @@ public class ConnectDB extends HttpServlet {
 		} catch (ClassNotFoundException e) {
 			System.out.println("Driver not found: " + e);
 		}
-		String url = "jdbc:mysql://mydbinstance.c3aqksy4y3yi.us-east-1.rds.amazonaws.com:3306/WebAppDB";
-		String user = "root";
-		String password = "0000abc!";
-		String dbname = "film";
+		String url = "@@@db_url@@@";
+		String user = "@@@db_user@@@";
+		String password = "@@@db_password@@@";
+		String dbname = "@@@dbname@@@";
 
 		try {
 			request.getRequestDispatcher("/team1_topHalf.jsp").include(request, response);
