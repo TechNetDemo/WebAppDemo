@@ -2,32 +2,30 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>  
-
+<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+<%@ page import = "javax.servlet.RequestDispatcher" %>
+<%@ page import="com.technet.ConnectDB" %>
 
 
 
 
 <html>
-<body bgcolor="55ee55">
+<body bgcolor="eeaaee">
 <% out.println("Your IP address is " + request.getRemoteAddr());%>
-<h2>This is the Forbidden Index.jsp</h2>
-<%= request.getAttribute("str1") %>
+<h2>This is the index page of webapp-team1</h2>
 
- <% String[] idArray = (String[])request.getAttribute("idArray"); %>
- <% String[] jspArray = {"aaa","bbb","ccc"}; %>
- <% String str1 = (String)request.getAttribute("str1"); %>
- 
  
       <table border = "1" width="100%">
          <tr>
             <th>Film ID</th>
             <th>Film Name</th>
             <th>Description</th>
-            <th><%=str1 %> </th>
          </tr>		
+     
+
+     <jsp:include page="/ConnectDB" />
      </table>
-
-
-      
-</body>
+     
+     
+</body> 
 </html>

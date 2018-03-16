@@ -27,7 +27,7 @@
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>ConnectDB</servlet-name>
-  	<url-pattern>/team1-site</url-pattern>
+  	<url-pattern>/ConnectDB</url-pattern>
   </servlet-mapping>
 
   

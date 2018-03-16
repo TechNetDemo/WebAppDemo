@@ -3,7 +3,6 @@ package com.technet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -37,13 +36,13 @@ public class ConnectDB extends HttpServlet {
 		} catch (ClassNotFoundException e) {
 			System.out.println("Driver not found: " + e);
 		}
-		String url = "@@@db_url@@@";
-		String user = "@@@db_user@@@";
-		String password = "@@@db_password@@@";
-		String dbname = "@@@dbname@@@";
+		String url = "jdbc:mysql://mydbinstance.c3aqksy4y3yi.us-east-1.rds.amazonaws.com:3306/WebAppDB";
+		String user = "root";
+		String password = "0000abc!";
+		String dbname = "film";
 
 		try {
-			request.getRequestDispatcher("/team1_topHalf.jsp").include(request, response);
+			//request.getRequestDispatcher("/team1_topHalf.jsp").include(request, response);
 			
 			Connection con = null;
 
@@ -56,7 +55,7 @@ public class ConnectDB extends HttpServlet {
 
 
 
-			for (int i = 0; rs.next(); i++) {
+			while (rs.next()){
 				String film_id = rs.getString("film_id");
 				String title = rs.getString("title");
 				String description = rs.getString("description");
@@ -69,7 +68,7 @@ public class ConnectDB extends HttpServlet {
 
 			}
 
-			out.println("</table></body></html>");
+
 			
 			return;
 			
