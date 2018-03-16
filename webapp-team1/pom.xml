@@ -40,22 +40,22 @@
     </pluginRepository>
   </pluginRepositories>
   <build>
-    <sourceDirectory>D:\eclipse-workspace\webapp-team1\src\main\java</sourceDirectory>
-    <scriptSourceDirectory>D:\eclipse-workspace\webapp-team1\src\main\scripts</scriptSourceDirectory>
-    <testSourceDirectory>D:\eclipse-workspace\webapp-team1\src\test\java</testSourceDirectory>
-    <outputDirectory>D:\eclipse-workspace\webapp-team1\target\classes</outputDirectory>
-    <testOutputDirectory>D:\eclipse-workspace\webapp-team1\target\test-classes</testOutputDirectory>
+    <sourceDirectory>${project.basedir}\src\main\java</sourceDirectory>
+    <scriptSourceDirectory>src\main\scripts</scriptSourceDirectory>
+    <testSourceDirectory>${project.basedir}\src\test\java</testSourceDirectory>
+    <outputDirectory>${project.basedir}\target\classes</outputDirectory>
+    <testOutputDirectory>${project.basedir}\target\test-classes</testOutputDirectory>
     <resources>
       <resource>
-        <directory>D:\eclipse-workspace\webapp-team1\src\main\resources</directory>
+        <directory>${project.basedir}\src\main\resources</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>D:\eclipse-workspace\webapp-team1\src\test\resources</directory>
+        <directory>${project.basedir}\src\test\resources</directory>
       </testResource>
     </testResources>
-    <directory>D:\eclipse-workspace\webapp-team1\target</directory>
+    <directory>${project.basedir}\target</directory>
     <finalName>webapp-team1</finalName>
     <pluginManagement>
       <plugins>
