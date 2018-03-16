@@ -7,8 +7,6 @@
 <%@ page import="com.technet.ConnectDB" %>
 
 
-
-
 <html>
 <body bgcolor="eeaaee">
 <% out.println("Your IP address is " + request.getRemoteAddr());%>
