@@ -29,6 +29,22 @@
   	<servlet-name>ConnectDB</servlet-name>
   	<url-pattern>/ConnectDB</url-pattern>
   </servlet-mapping>
-
   
+  
+   <context-param>
+		<param-name>db_url</param-name>
+		<param-value>jdbc:mysql://localhost:3306/sakila</param-value>
+   </context-param>  
+   <context-param>
+		<param-name>db_username</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>db_password</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>db_dbname</param-name>
+		<param-value>film</param-value>
+	</context-param>
 </web-app>

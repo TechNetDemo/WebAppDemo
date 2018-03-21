@@ -24,4 +24,13 @@
          <country>##9##</country>
       </info>
    </user>
+   <context-param>
+		<param-name>db_username</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>db_password</param-name>
+		<param-value>root</param-value>
+	</context-param>
 </document>
+

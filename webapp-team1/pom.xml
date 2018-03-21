@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.technet</groupId>
   <artifactId>webapp-team1</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.3-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>webapp-team1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -15,12 +15,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-  <dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>3.0.1</version>
-    <scope>provided</scope>
-</dependency>
   </dependencies>
   <repositories>
     <repository>
@@ -46,22 +40,22 @@
     </pluginRepository>
   </pluginRepositories>
   <build>
-    <sourceDirectory>${project.basedir}\src\main\java</sourceDirectory>
-    <scriptSourceDirectory>src\main\scripts</scriptSourceDirectory>
-    <testSourceDirectory>${project.basedir}\src\test\java</testSourceDirectory>
-    <outputDirectory>${project.basedir}\target\classes</outputDirectory>
-    <testOutputDirectory>${project.basedir}\target\test-classes</testOutputDirectory>
+    <sourceDirectory>D:\eclipse-workspace\webapp-team1\src\main\java</sourceDirectory>
+    <scriptSourceDirectory>D:\eclipse-workspace\webapp-team1\src\main\scripts</scriptSourceDirectory>
+    <testSourceDirectory>D:\eclipse-workspace\webapp-team1\src\test\java</testSourceDirectory>
+    <outputDirectory>D:\eclipse-workspace\webapp-team1\target\classes</outputDirectory>
+    <testOutputDirectory>D:\eclipse-workspace\webapp-team1\target\test-classes</testOutputDirectory>
     <resources>
       <resource>
-        <directory>${project.basedir}\src\main\resources</directory>
+        <directory>D:\eclipse-workspace\webapp-team1\src\main\resources</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>${project.basedir}\src\test\resources</directory>
+        <directory>D:\eclipse-workspace\webapp-team1\src\test\resources</directory>
       </testResource>
     </testResources>
-    <directory>${project.basedir}\target</directory>
+    <directory>D:\eclipse-workspace\webapp-team1\target</directory>
     <finalName>webapp-team1</finalName>
     <pluginManagement>
       <plugins>
@@ -200,7 +194,7 @@
               <goal>site</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.basedir}\target\site</outputDirectory>
+              <outputDirectory>D:\eclipse-workspace\webapp-team1\target\site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -216,7 +210,7 @@
               <goal>deploy</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.basedir}\target\site</outputDirectory>
+              <outputDirectory>D:\eclipse-workspace\webapp-team1\target\site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -227,7 +221,7 @@
           </execution>
         </executions>
         <configuration>
-          <outputDirectory>${project.basedir}\target\site</outputDirectory>
+          <outputDirectory>D:\eclipse-workspace\webapp-team1\target\site</outputDirectory>
           <reportPlugins>
             <reportPlugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -239,6 +233,6 @@
     </plugins>
   </build>
   <reporting>
-    <outputDirectory>${project.basedir}\target\site</outputDirectory>
+    <outputDirectory>D:\eclipse-workspace\webapp-team1\target\site</outputDirectory>
   </reporting>
 </project>
