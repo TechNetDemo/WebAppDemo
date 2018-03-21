@@ -6,45 +6,45 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>ServletOne</servlet-name>
-  	<display-name>ServletOne</display-name>
-  	<description></description>
-  	<servlet-class>com.technet.ServletOne</servlet-class>
+    <servlet-name>ServletOne</servlet-name>
+    <display-name>ServletOne</display-name>
+    <description></description>
+    <servlet-class>com.technet.ServletOne</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>ConnectDB</servlet-name>
-  	<display-name>ConnectDB</display-name>
-  	<description></description>
-  	<servlet-class>com.technet.ConnectDB</servlet-class>
+    <servlet-name>ConnectDB</servlet-name>
+    <display-name>ConnectDB</display-name>
+    <description></description>
+    <servlet-class>com.technet.ConnectDB</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>ServletOne</servlet-name>
-  	<url-pattern>/ServletOne</url-pattern>
+    <servlet-name>ServletOne</servlet-name>
+    <url-pattern>/ServletOne</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>ServletOne</servlet-name>
-  	<url-pattern>/page1</url-pattern>
+    <servlet-name>ServletOne</servlet-name>
+    <url-pattern>/page1</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>ConnectDB</servlet-name>
-  	<url-pattern>/ConnectDB</url-pattern>
+    <servlet-name>ConnectDB</servlet-name>
+    <url-pattern>/ConnectDB</url-pattern>
   </servlet-mapping>
   
   
    <context-param>
-		<param-name>db_url</param-name>
-		<param-value>jdbc:mysql://localhost:3306/sakila</param-value>
+    <param-name>db_url</param-name>
+    <param-value>@@@db_url@@@</param-value>
    </context-param>  
    <context-param>
-		<param-name>db_username</param-name>
-		<param-value>root</param-value>
-	</context-param>
-	<context-param>
-		<param-name>db_password</param-name>
-		<param-value>root</param-value>
-	</context-param>
-	<context-param>
-		<param-name>db_dbname</param-name>
-		<param-value>film</param-value>
-	</context-param>
+    <param-name>db_username</param-name>
+    <param-value>@@@db_username@@@</param-value>
+  </context-param>
+  <context-param>
+    <param-name>db_password</param-name>
+    <param-value>@@@db_password@@@</param-value>
+  </context-param>
+  <context-param>
+    <param-name>db_dbname</param-name>
+    <param-value>@@@db_dbname@@@</param-value>
+  </context-param>
 </web-app>
