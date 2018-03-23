@@ -44,7 +44,7 @@
     <param-value>@@@db_password@@@</param-value>
   </context-param>
   <context-param>
-    <param-name>db_dbname</param-name>
-    <param-value>@@@db_dbname@@@</param-value>
+    <param-name>db_tableName</param-name>
+    <param-value>@@@db_tableName@@@</param-value>
   </context-param>
 </web-app>
