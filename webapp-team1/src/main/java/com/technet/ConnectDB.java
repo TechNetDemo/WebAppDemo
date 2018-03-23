@@ -40,7 +40,7 @@ public class ConnectDB extends HttpServlet {
 		String url = getServletContext().getInitParameter("db_url");
 		String user = getServletContext().getInitParameter("db_username");
 		String password = getServletContext().getInitParameter("db_password");
-		String dbname = getServletContext().getInitParameter("db_dbname");
+		String tableName = getServletContext().getInitParameter("db_tableName");
 
 		try {
 			//request.getRequestDispatcher("/team1_topHalf.jsp").include(request, response);
@@ -51,7 +51,7 @@ public class ConnectDB extends HttpServlet {
 			System.out.println("Connection Success");
 			Statement statement = con.createStatement();
 			PrintWriter out = response.getWriter();
-			String sql = "Select * from " + dbname;
+			String sql = "Select * from " + tableName;
 			ResultSet rs = statement.executeQuery(sql);
 
 
