@@ -1,11 +1,10 @@
 <%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+<%@ page import = "com.technet.ConnectDB"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>  
 <%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
 <%@ page import = "javax.servlet.RequestDispatcher" %>
-<%@ page import="com.technet.ConnectDB" %>
-
 
 
 
