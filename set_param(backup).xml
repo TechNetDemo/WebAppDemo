@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context-param>
+		<param-name>db_username</param-name>
+		<param-value>@@@db_username@@@</param-value>
+	</context-param>
+	<context-param>
+		<param-name>db_password</param-name>
+		<param-value>@@@db_password@@@</param-value>
+	</context-param>
+</document>
+
