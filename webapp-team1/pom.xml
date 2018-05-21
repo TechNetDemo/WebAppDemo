@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.technet</groupId>
   <artifactId>webapp-team1</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.1.2</version>
   <packaging>war</packaging>
   <name>webapp-team1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -29,7 +29,7 @@
       </snapshots>
       <id>central</id>
       <name>Central Repository</name>
-      <url>http://10.9.17.187:8081/nexus/content/repositories/WEBAPP/</url>
+      <url>http://repo.maven.apache.org/maven2</url>
     </repository>
   </repositories>
   <pluginRepositories>
@@ -42,7 +42,7 @@
       </snapshots>
       <id>central</id>
       <name>Central Repository</name>
-      <url>http://10.9.17.187:8081/nexus/content/repositories/WEBAPP/</url>
+      <url>http://repo.maven.apache.org/maven2</url>
     </pluginRepository>
   </pluginRepositories>
   <build>
