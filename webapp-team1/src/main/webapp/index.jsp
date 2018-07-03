@@ -9,7 +9,7 @@
 
 
 <html>
-<body bgcolor="eeaaee">
+<body bgcolor="00aaff">
 <% out.println("Your IP address is " + request.getRemoteAddr());%>
 <h2>This is the index page of webapp-team1</h2>
 
